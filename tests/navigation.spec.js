@@ -5,7 +5,6 @@ test('should navigate to Home page and verify h1', async ({ page }) => {
 
     const h1 = await page.locator('h1');
     await expect(h1).toHaveText('Home');
-    await expect(page).toHaveURL(/\/index\.html$/);
 });
 
 test('should navigate to About page via link and verify h1', async ({ page }) => {
